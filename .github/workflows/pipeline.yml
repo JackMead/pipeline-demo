@@ -1,0 +1,15 @@
+name: Example
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+      
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v2
+    - name: Python stuff
+      run: python app.py
