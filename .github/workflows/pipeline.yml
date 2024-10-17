@@ -13,3 +13,5 @@ jobs:
       uses: actions/checkout@v2
     - name: Python stuff
       run: python app.py
+    - name: Run it again
+      run: python app.py
